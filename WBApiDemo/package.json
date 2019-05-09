@@ -5,13 +5,18 @@
   "author": "wanbeila <404197662@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 192.168.2.101",
     "start": "npm run dev",
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "css-loader": "^0.28.11",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^3.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
